@@ -17,31 +17,37 @@ const MovieForm = (props) => {
 		<input type="text" onChange={
 			(e)=>{setTitle(e.target.value)
 		}}/>
+
 		<br/>
 		<label>Director: </label>
 		<input type="text" onChange={
 			(e)=>{setDirector(e.target.value)
 		}}/>
+
 		<br/>
 		<label>Actors: </label>
 		<input type="text" onChange={
 			(e)=>{setActor(e.target.value)
 		}}/>
+		
 		<br/>
 		<label>Plot: </label>
 		<input type="text" onChange={
 			(e)=>{setPlot(e.target.value)
 		}}/>
+
 		<br/>
 		<label>Imdb Rating: </label>
 		<input type="number" step="0.1" onChange={
 			(e)=>{setImdb(e.target.value)
 		}}/>
+
 		<br/>
 		<label>Year: </label>
 		<input type="number" onChange={
 			(e)=>{setYear(e.target.value)
 		}}/>
+
 		<br/>
 		<button onClick={()=>{
 			const newMovie = {
@@ -54,6 +60,13 @@ const MovieForm = (props) => {
 			}
 			props.handleAddMovie(newMovie)
 		}}>Add Movie</button>
+		<br/>
+
+		<label for="movies">Choose a movie</label>
+		<select name="movies" id="cars">
+			<option>Movie</option>
+			<option>Movie2</option>
+		</select>
   
   
 		<p>Current Title: {title}</p>
@@ -102,7 +115,7 @@ const App = () => {
 	  <div className="App">
 		<h1>Movie Form</h1>
 		<header className="App-header">
-			<MovieForm handleAddMovie={handleAddMovie} />
+			<MovieForm handleAddMovie={handleAddMovie} movieList={movieList} />
 			<MovieDisplay movieList={movieList}/>
 		</header>
 	  </div>

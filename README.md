@@ -132,8 +132,7 @@ ReactIntroForm Part 2:
 	- Add css to <MoviesForm/>, <MovieDisplay/> and <MovieItem/> to make the page look more organized.
 	- Add conditional css to <MovieItem/> so that the background color of the movie item is green when the movie has an imdbRating above 8, yellow when the imdbRating is 5-7.9, and red for an imdbRating below a 5
 
-
-
+All the info from setting up the React App
 
 # Getting Started with Create React App
 
