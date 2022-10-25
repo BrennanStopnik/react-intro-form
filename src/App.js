@@ -62,11 +62,11 @@ const MovieForm = (props) => {
 		}}>Add Movie</button>
 		<br/>
 
-		<label for="movies">Choose a movie</label>
+		{/* <label for="movies">Choose a movie</label>
 		<select name="movies" id="cars">
 			<option>Movie</option>
 			<option>Movie2</option>
-		</select>
+		</select> */}
   
   
 		<p>Current Title: {title}</p>
